@@ -1,0 +1,11 @@
+<p>
+  Todo
+</p>
+
+<input type="text" (keyup.enter)="todoEntered($event)">
+
+<div *ngIf="todoListState$ | async as todoListState">
+      <ul>
+        <li (click)="toggleTodo(todo)" [ngClass] = "{'strike': todo.isCompleted}" *ngFor="let todo of todoListState">{{todo.description}}</li>
+      </ul>
+</div>

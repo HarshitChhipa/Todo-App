@@ -135,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "angular-poc"
+  "defaultProject": "angular-poc",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
